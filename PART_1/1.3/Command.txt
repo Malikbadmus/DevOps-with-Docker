@@ -1,0 +1,9 @@
+docker run -d devopsdockeruh/simple-web-service:ubuntu
+docker ps -a
+docker start 13
+docker exec -it 13 bash
+tail -f ./text.log
+Ctrl+C
+exit
+docker stop 13
+docker rm 13
