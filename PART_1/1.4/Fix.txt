@@ -1,0 +1,4 @@
+docker exec -it example bash
+apt-get update
+apt-get -y install curl
+exit
