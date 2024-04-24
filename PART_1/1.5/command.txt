@@ -1,0 +1,9 @@
+docker pull devopsdockeruh/simple-web-service:alpine
+docker pull devopsdockeruh/simple-web-service:ubuntu
+docker image ls
+docker run -d --name simple-alpine devopsdockeruh/simple-web-service:alpine
+docker exec -it simple-alpine sh
+tail -f ./text.log
+exit
+docker stop simple-alpine
+docker rm simple-alpine
